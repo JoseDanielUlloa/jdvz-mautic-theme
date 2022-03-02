@@ -1,0 +1,14 @@
+{
+  "name": "mautic/theme-jdvz",
+  "description": "JDVz Theme",
+  "type": "mautic-theme",
+  "keywords": ["mautic","theme", "light", "three-columns", "responsive-layout", "accessibility-ready"],
+  "extra": {
+    "install-directory-name": "jdvz"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4.0 <8.1",
+    "mautic/core-lib": "^4.0"
+  }
+}
