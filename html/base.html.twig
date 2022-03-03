@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         {% if page is defined %}
-        <title>{pagetitle}</title>
+            <title>{pagetitle}</title>
             <meta name="description" content="{pagemetadescription}">
-            {% endif %}
-        {% block stylesheets %}{% endblock %}
-            {{ outputHeadDeclarations() }}
+        {% endif %}
+        <meta name="author" content="https://youtube.com/c/jdvznet">
+        <!-- CSS links -->
+        <link rel="stylesheet" href="https://jdvz.net/wp-content/themes/jdvz/assets/css/normalize.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://jdvz.net/wp-content/themes/jdvz/style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:ital,wght@0,400;0,700;1,700&display=swap">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        {{ outputHeadDeclarations() }}
     </head>
     <body>
         {{ outputScripts('bodyOpen') }}
         {% block content %}{% endblock %}
         {{ outputScripts('bodyClose') }}
+        <!-- JS links -->
+        <script type="text/javascript" src="https://jdvz.net/wp-content/themes/jdvz/assets/js/main.js"></script>
     </body>
 </html>
