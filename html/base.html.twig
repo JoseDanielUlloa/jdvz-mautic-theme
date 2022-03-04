@@ -20,6 +20,69 @@
         {{ outputHeadDeclarations() }}
     </head>
     <body>
+        <header class="a11y-nav main-header">
+            <!-- Skip links -->
+            <a href="#main-content" class="skip-link">Skip to content</a>
+
+            <!-- Left side menu toggle -->
+            <button id="nav-main-toggle" class="left-nav-toggle" aria-label="Toggle left side site navigation">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+                <span>Menu</span>
+            </button>
+
+            <!-- Left side nav -->
+            <div class="left-nav-wrapper">
+                <nav id="left-nav" class="left-nav" aria-label="Left side site navigation">
+                    <h2 id="left-nav-heading" class="sr-only">Left side site navigation</h2>
+                    <ul aria-labelledby="left-nav-heading" class="list-reset">
+                        <li>
+                            <a href="https://jdvz.net/category/well-being/">
+                                Well-being
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jdvz.net/category/coding-and-tech/">
+                                Coding &amp; Tech
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jdvz.net/category/arts/">
+                                Arts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="https://jdvz.net" arial-label="Homepage">
+                    <img src="https://jdvz.net/wp-content/uploads/2021/10/logo.png" alt="Logo with JDVz initials in yellow on a black background." title="Homepage">
+                </a>
+            </div>
+
+            <!-- Right side nav -->
+            <div class="right-nav-wrapper">
+                <nav id="right-nav" class="right-nav" aria-label="Right side site navigation">
+                    <h2 id="right-nav-heading" class="sr-only">Right side site navigation</h2>
+                    <ul aria-labelledby="right-nav-heading" class="list-reset">
+                        <li>
+                            <a href="https://jdvz.net/wp-login.php">
+                                <i aria-hidden="true" class="far fa-user-circle" title="My account"></i>
+                                <span class="sr-only">My account</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jdvz.net/contact/">
+                                <i aria-hidden="true" class="far fa-envelope" title="Contact page"></i>
+                                <span class="sr-only">Contact page</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         {{ outputScripts('bodyOpen') }}
         {% block content %}{% endblock %}
         {{ outputScripts('bodyClose') }}
