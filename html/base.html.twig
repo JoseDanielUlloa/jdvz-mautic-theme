@@ -20,6 +20,7 @@
         {{ outputHeadDeclarations() }}
     </head>
     <body>
+        <!-- Header -->
         <header class="a11y-nav main-header">
             <!-- Skip links -->
             <a href="#main-content" class="skip-link">Skip to content</a>
@@ -83,9 +84,13 @@
                 </nav>
             </div>
         </header>
+
+        <!-- Main content -->
         {{ outputScripts('bodyOpen') }}
         {% block content %}{% endblock %}
         {{ outputScripts('bodyClose') }}
+
+        <!-- Footer -->
         <footer class="main-footer">
             <!-- Social Media Links -->
             <div class="social-nav-wrapper">
@@ -120,6 +125,7 @@
                 </nav>
             </div>
         </footer>
+
         <!-- JS links -->
         <script type="text/javascript" src="https://jdvz.net/wp-content/themes/jdvz/assets/js/main.js"></script>
     </body>
