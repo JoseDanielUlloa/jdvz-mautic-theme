@@ -3,11 +3,13 @@
 {% endblock %}
 {% block content %}
     <div class="default-page">
-        {{ message|raw }}
-        {% if content is defined %}
         <main id="main-content">
-            {{ content|raw }}
+            <h2>
+                {{ message|raw }}
+            </h2>
+            {% if content is defined %}
+                {{ content|raw }}
+            {% endif %}
         </main>
-        {% endif %}
     </div>
 {% endblock %}
