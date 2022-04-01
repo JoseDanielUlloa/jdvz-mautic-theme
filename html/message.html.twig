@@ -1,12 +1,13 @@
 {% extends ":"~template~":base.html.twig" %}
 {% block stylesheets %}
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
 {% endblock %}
 {% block content %}
-    <div>
+    <div class="default-page">
         {{ message|raw }}
         {% if content is defined %}
-        <div>{{ content|raw }}</div>
+        <main id="main-content">
+            {{ content|raw }}
+        </main>
         {% endif %}
     </div>
 {% endblock %}
