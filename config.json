@@ -1,6 +1,6 @@
 {
   "name": "JDVz",
-  "author": "Jos&eacute; Daniel Vazquez",
+  "author": "Jos&eacute; Daniel V&aacute;zquez",
   "authorUrl": "https://jdvz.net",
   "builder": ["legacy", "grapesjsbuilder"],
   "features": ["page", "email", "form"]
